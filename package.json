@@ -1,0 +1,45 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "A Telegram clicker game similar to Hamster Kombat or Notcoin",
+  "keywords": [],
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev:output": "nodemon app.js",
+    "dev:client": "",
+    "dev:server": "jest",
+    "build:output": "",
+    "build:client": "",
+    "build:server": "",
+    "build:clears": "",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "date-fns": "^3.6.0",
+    "debug": "^4.3.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.10.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.7.5",
+    "svelte": "^4.2.18",
+    "svelte-chartjs": "^3.1.5",
+    "svelte-i18n": "^4.0.0",
+    "svelte-routing": "^2.13.0",
+    "svelte-toast": "^1.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.3",
+    "supertest": "^7.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
