@@ -6,5 +6,5 @@ const express = require('express');
 const helmet = require('helmet');
 const Sequelize = require('sequelize');
 const TelegramBot = require('node-telegram-bot-api');
-const { logger } = require('./utils/logger');
-const debug = require('./utils/debug')('app:server');
+const { logger, createDebug } = require('./system/methods'); 
+const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
