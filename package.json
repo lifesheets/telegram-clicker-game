@@ -7,13 +7,13 @@
   "scripts": {
     "start": "node app.js",
     "dev:output": "nodemon app.js",
-    "dev:client": "",
+    "dev:client": "rollup -c -w",
     "dev:server": "jest",
     "debug:server": "set DEBUG=debug:server & nodemon app.js",
     "debug:client": "set DEBUG=debug:client & nodemon app.js",
     "debug:mysqli": "set DEBUG=debug:mysqli & nodemon app.js",
     "build:output": "",
-    "build:client": "",
+    "build:client": "rollup -c",
     "build:server": "",
     "build:clears": "",
     "test": "jest"
@@ -39,9 +39,16 @@
     "winston": "^3.13.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "jest": "^29.7.0",
     "nodemon": "^3.1.3",
-    "supertest": "^7.0.0"
+    "rollup": "^2.79.1",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-svelte": "^7.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "supertest": "^7.0.0",
+    "svelte-preprocess": "^5.1.4"
   },
   "author": "",
   "license": "ISC"
